@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VPS Hosting — Vital Cloud</title>
+<meta name="description" content="Full root access VPS on AMD EPYC and NVMe storage, with KVM virtualization, snapshot backups, and instant provisioning.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/components.css">
+</head>
+<body>
+
+<div class="aurora-bg"></div>
+<div class="noise-overlay"></div>
+<div class="cursor-glow"></div>
+
+<div id="nav-mount"></div>
+
+<section class="hero" style="min-height:70vh;">
+  <canvas id="particle-canvas"></canvas>
+  <div class="wrap hero-content">
+    <div class="hero-badges">
+      <span class="trust-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Full root access</span>
+      <span class="trust-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>KVM virtualization</span>
+      <span class="trust-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>NVMe storage</span>
+    </div>
+    <h1 class="hero-title">VPS compute with <span class="grad">no compromises</span></h1>
+    <p class="hero-sub">Dedicated AMD EPYC cores, NVMe storage, and full root access — provisioned in under 60 seconds, yours to configure however you need.</p>
+    <div class="hero-actions">
+      <a href="#pricing" class="btn btn-primary btn-lg">See plans →</a>
+      <a href="#specs" class="btn btn-ghost btn-lg">Compare specs</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRICING ================= -->
+<section class="section" id="pricing">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow"><span class="dot"></span> VPS plans</span>
+      <h2 class="section-title">Sized for every workload</h2>
+      <p class="section-desc">Every instance includes full root access, KVM virtualization, and a choice of Linux or Windows.</p>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="glass-card price-card reveal">
+        <div class="price-tier">Nano</div>
+        <div class="price-amount">$6<span class="period">/month</span></div>
+        <ul class="price-features">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>1 vCPU core</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>2GB RAM</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>40GB NVMe SSD</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>2TB bandwidth</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Weekly snapshots</li>
+        </ul>
+        <a href="#" class="btn btn-ghost btn-block">Deploy Nano</a>
+      </div>
+
+      <div class="glass-card price-card popular reveal">
+        <span class="popular-badge">MOST POPULAR</span>
+        <div class="price-tier">Core</div>
+        <div class="price-amount">$16<span class="period">/month</span></div>
+        <ul class="price-features">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>2 vCPU cores</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>4GB RAM</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>80GB NVMe SSD</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>4TB bandwidth</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Daily snapshots</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Dedicated IPv4</li>
+        </ul>
+        <a href="#" class="btn btn-primary btn-block">Deploy Core</a>
+      </div>
+
+      <div class="glass-card price-card reveal">
+        <div class="price-tier">Scale</div>
+        <div class="price-amount">$38<span class="period">/month</span></div>
+        <ul class="price-features">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>4 vCPU cores</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>8GB RAM</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>160GB NVMe SSD</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>8TB bandwidth</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Priority support</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Private networking</li>
+        </ul>
+        <a href="#" class="btn btn-ghost btn-block">Deploy Scale</a>
+      </div>
+
+      <div class="glass-card price-card reveal">
+        <div class="price-tier">Enterprise</div>
+        <div class="price-amount">$84<span class="period">/month</span></div>
+        <ul class="price-features">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>8 vCPU cores</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>16GB RAM</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>320GB NVMe SSD</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>16TB bandwidth</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>SLA-backed support</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Dedicated account manager</li>
+        </ul>
+        <a href="#" class="btn btn-ghost btn-block">Talk to sales</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SPEC COMPARISON ================= -->
+<section class="section" id="specs">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow"><span class="dot"></span> Under the hood</span>
+      <h2 class="section-title">Every instance, same enterprise core</h2>
+      <p class="section-desc">The difference between plans is size, not quality — every tier gets the same hardware class.</p>
+    </div>
+    <div class="glass-card dash-mock reveal-scale">
+      <div class="dash-topbar">
+        <div class="dash-dots"><span></span><span></span><span></span></div>
+        <div class="dash-title">panel.vitalcloud.fun / core-plan / web-prod-02</div>
+        <div class="tag">● online · 9ms</div>
+      </div>
+      <div class="dash-body">
+        <div class="dash-grid">
+          <div class="dash-stat">
+            <div class="label"><span>CPU</span><span data-live-percent>—</span></div>
+            <div class="value">24%</div>
+            <div class="dash-bar-track"><div class="dash-bar-fill" data-live style="width:24%"></div></div>
+          </div>
+          <div class="dash-stat">
+            <div class="label"><span>RAM</span><span>3.1 / 8 GB</span></div>
+            <div class="value">39%</div>
+            <div class="dash-bar-track"><div class="dash-bar-fill" data-live style="width:39%; background:linear-gradient(90deg, var(--violet), var(--blue));"></div></div>
+          </div>
+          <div class="dash-stat">
+            <div class="label"><span>Disk I/O</span><span>NVMe</span></div>
+            <div class="value">1.2<span style="font-size:13px;">GB/s</span></div>
+            <div class="dash-bar-track"><div class="dash-bar-fill" style="width:64%; background:linear-gradient(90deg, var(--green), var(--cyan));"></div></div>
+          </div>
+          <div class="dash-stat">
+            <div class="label"><span>Bandwidth</span><span>4TB cap</span></div>
+            <div class="value">1.1<span style="font-size:13px;">TB used</span></div>
+            <div class="dash-bar-track"><div class="dash-bar-fill" style="width:27%; background:linear-gradient(90deg, var(--amber), var(--cyan));"></div></div>
+          </div>
+        </div>
+        <div class="dash-chart-panel">
+          <div>
+            <div class="label" style="font-size:12px;color:var(--text-dimmer);margin-bottom:10px;">Requests/sec · last hour</div>
+            <div class="chart-mini">
+              <div class="chart-bar" style="height:50%"></div>
+              <div class="chart-bar" style="height:65%"></div>
+              <div class="chart-bar" style="height:45%"></div>
+              <div class="chart-bar" style="height:80%"></div>
+              <div class="chart-bar" style="height:70%"></div>
+              <div class="chart-bar" style="height:90%"></div>
+              <div class="chart-bar" style="height:60%"></div>
+              <div class="chart-bar" style="height:75%"></div>
+              <div class="chart-bar" style="height:55%"></div>
+              <div class="chart-bar" style="height:85%"></div>
+              <div class="chart-bar" style="height:68%"></div>
+              <div class="chart-bar" style="height:72%"></div>
+            </div>
+          </div>
+          <div>
+            <div class="label" style="font-size:12px;color:var(--text-dimmer);margin-bottom:10px;">Instance details</div>
+            <div class="server-status-list">
+              <div class="server-status-row"><span class="status-dot"></span><span class="name">Ubuntu 24.04 LTS</span><span class="ping">root</span></div>
+              <div class="server-status-row"><span class="status-dot"></span><span class="name">KVM virtualization</span><span class="ping">active</span></div>
+              <div class="server-status-row"><span class="status-dot"></span><span class="name">Firewall</span><span class="ping">3 rules</span></div>
+              <div class="server-status-row"><span class="status-dot"></span><span class="name">Last snapshot</span><span class="ping">6h ago</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURES STRIP ================= -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="dot"></span> Full control</span>
+      <h2 class="section-title">Root access, real hardware, your rules</h2>
+    </div>
+    <div class="features-grid">
+      <div class="glass-card feature-card reveal">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg></div>
+        <h4>Full root access</h4>
+        <p>SSH in as root from the moment your instance boots — install anything, configure everything.</p>
+      </div>
+      <div class="glass-card feature-card reveal">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><rect x="4" y="4" width="16" height="7" rx="1.5"/><rect x="4" y="13" width="16" height="7" rx="1.5"/></svg></div>
+        <h4>KVM virtualization</h4>
+        <p>True hardware-level virtualization means consistent, isolated performance — not oversold containers.</p>
+      </div>
+      <div class="glass-card feature-card reveal">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M21 8v13H3V8M1 3h22v5H1z"/></svg></div>
+        <h4>One-click snapshots</h4>
+        <p>Take a full instance snapshot before any risky change, and restore it instantly if needed.</p>
+      </div>
+      <div class="glass-card feature-card reveal">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/></svg></div>
+        <h4>Choice of OS</h4>
+        <p>Deploy Ubuntu, Debian, Rocky Linux, or Windows Server, all from a template gallery in the panel.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="wrap">
+    <div class="glass cta-box reveal-scale">
+      <h2>Compute that's ready before your coffee is</h2>
+      <p>Provision a VPS instance and get root access in under 60 seconds.</p>
+      <div class="cta-actions">
+        <a href="#pricing" class="btn btn-primary btn-lg">Deploy now →</a>
+        <a href="minecraft.html" class="btn btn-ghost btn-lg">Need Minecraft hosting instead?</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-mount"></div>
+
+<script src="assets/partials.js"></script>
+<script src="assets/script.js"></script>
+</body>
+</html>

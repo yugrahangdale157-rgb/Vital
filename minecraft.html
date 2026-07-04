@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Minecraft Server Hosting — Vital Cloud</title>
+<meta name="description" content="Deploy a Minecraft server in under 60 seconds on AMD EPYC hardware with NVMe storage, DDoS protection, and one-click modpacks.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="stylesheet" href="assets/components.css">
+</head>
+<body>
+
+<div class="aurora-bg"></div>
+<div class="noise-overlay"></div>
+<div class="cursor-glow"></div>
+
+<div id="nav-mount"></div>
+
+<section class="hero" style="min-height:70vh;">
+  <canvas id="particle-canvas"></canvas>
+  <div class="wrap hero-content">
+    <div class="hero-badges">
+      <span class="trust-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Java & Bedrock</span>
+      <span class="trust-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>1-click modpacks</span>
+      <span class="trust-pill"><svg viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>DDoS protected</span>
+    </div>
+    <h1 class="hero-title">Minecraft hosting built for <span class="grad">zero lag</span></h1>
+    <p class="hero-sub">AMD EPYC single-core performance tuned for the way Minecraft actually runs, with instant modpack installs and a control panel anyone can use.</p>
+    <div class="hero-actions">
+      <a href="#pricing" class="btn btn-primary btn-lg">See plans →</a>
+      <a href="#panel" class="btn btn-ghost btn-lg">View the control panel</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PRICING ================= -->
+<section class="section" id="pricing">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow"><span class="dot"></span> Minecraft plans</span>
+      <h2 class="section-title">Pick your world size</h2>
+      <p class="section-desc">Every plan includes NVMe storage, DDoS protection, daily backups, and full plugin/mod support.</p>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="glass-card price-card reveal">
+        <div class="price-tier">Sapling</div>
+        <div class="price-amount">$4<span class="period">/month</span></div>
+        <ul class="price-features">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>2GB RAM</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Shared vCPU</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>10GB NVMe SSD</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Up to 10 players</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Daily backups</li>
+        </ul>
+        <a href="#" class="btn btn-ghost btn-block">Deploy Sapling</a>
+      </div>
+
+      <div class="glass-card price-card popular reveal">
+        <span class="popular-badge">MOST POPULAR</span>
+        <div class="price-tier">Oak</div>
+        <div class="price-amount">$9<span class="period">/month</span></div>
+        <ul class="price-features">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>4GB RAM</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>2 dedicated vCPU threads</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>25GB NVMe SSD</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Up to 30 players</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>1-click modpacks</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Free subdomain</li>
+        </ul>
+        <a href="#" class="btn btn-primary btn-block">Deploy Oak</a>
+      </div>
+
+      <div class="glass-card price-card reveal">
+        <div class="price-tier">Redwood</div>
+        <div class="price-amount">$18<span class="period">/month</span></div>
+        <ul class="price-features">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>8GB RAM</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>4 dedicated vCPU threads</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>50GB NVMe SSD</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Up to 80 players</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Multi-world support</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Priority support</li>
+        </ul>
+        <a href="#" class="btn btn-ghost btn-block">Deploy Redwood</a>
+      </div>
+
+      <div class="glass-card price-card reveal">
+        <div class="price-tier">Ancient</div>
+        <div class="price-amount">$34<span class="period">/month</span></div>
+        <ul class="price-features">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>16GB RAM</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>8 dedicated vCPU threads</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>120GB NVMe SSD</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Unlimited players*</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>Dedicated IP</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>White-glove migration</li>
+        </ul>
+        <a href="#" class="btn btn-ghost btn-block">Deploy Ancient</a>
+      </div>
+    </div>
+    <p style="text-align:center; color:var(--text-dimmer); font-size:12.5px; margin-top:24px;">*Subject to fair-use hardware limits based on plugins/mods installed.</p>
+  </div>
+</section>
+
+<!-- ================= CONTROL PANEL ================= -->
+<section class="section" id="panel">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <span class="eyebrow"><span class="dot"></span> Control panel</span>
+      <h2 class="section-title">Everything a server owner needs, nothing they don't</h2>
+      <p class="section-desc">Install a modpack, manage plugins, edit server.properties, and view live console — all from your browser.</p>
+    </div>
+    <div class="glass-card dash-mock reveal-scale">
+      <div class="dash-topbar">
+        <div class="dash-dots"><span></span><span></span><span></span></div>
+        <div class="dash-title">panel.vitalcloud.fun / oak-plan / modded-smp</div>
+        <div class="tag">● online · 14ms</div>
+      </div>
+      <div class="dash-body">
+        <div class="dash-grid">
+          <div class="dash-stat">
+            <div class="label"><span>CPU</span><span data-live-percent>—</span></div>
+            <div class="value">38%</div>
+            <div class="dash-bar-track"><div class="dash-bar-fill" data-live style="width:38%"></div></div>
+          </div>
+          <div class="dash-stat">
+            <div class="label"><span>RAM</span><span>2.9 / 4 GB</span></div>
+            <div class="value">72%</div>
+            <div class="dash-bar-track"><div class="dash-bar-fill" data-live style="width:72%; background:linear-gradient(90deg, var(--violet), var(--blue));"></div></div>
+          </div>
+          <div class="dash-stat">
+            <div class="label"><span>Players</span><span>online</span></div>
+            <div class="value">18<span style="font-size:13px;">/30</span></div>
+            <div class="dash-bar-track"><div class="dash-bar-fill" style="width:60%; background:linear-gradient(90deg, var(--green), var(--cyan));"></div></div>
+          </div>
+          <div class="dash-stat">
+            <div class="label"><span>TPS</span><span>target 20</span></div>
+            <div class="value">19.8</div>
+            <div class="dash-bar-track"><div class="dash-bar-fill" style="width:99%; background:linear-gradient(90deg, var(--green), var(--cyan));"></div></div>
+          </div>
+        </div>
+        <div class="dash-chart-panel">
+          <div>
+            <div class="label" style="font-size:12px;color:var(--text-dimmer);margin-bottom:10px;">Player count · last 24h</div>
+            <div class="chart-mini">
+              <div class="chart-bar" style="height:30%"></div>
+              <div class="chart-bar" style="height:45%"></div>
+              <div class="chart-bar" style="height:60%"></div>
+              <div class="chart-bar" style="height:85%"></div>
+              <div class="chart-bar" style="height:70%"></div>
+              <div class="chart-bar" style="height:95%"></div>
+              <div class="chart-bar" style="height:80%"></div>
+              <div class="chart-bar" style="height:55%"></div>
+              <div class="chart-bar" style="height:40%"></div>
+              <div class="chart-bar" style="height:65%"></div>
+              <div class="chart-bar" style="height:75%"></div>
+              <div class="chart-bar" style="height:50%"></div>
+            </div>
+          </div>
+          <div>
+            <div class="label" style="font-size:12px;color:var(--text-dimmer);margin-bottom:10px;">Installed</div>
+            <div class="server-status-list">
+              <div class="server-status-row"><span class="status-dot"></span><span class="name">Fabric 1.21.1</span><span class="ping">active</span></div>
+              <div class="server-status-row"><span class="status-dot"></span><span class="name">Create: Above and Beyond</span><span class="ping">modpack</span></div>
+              <div class="server-status-row"><span class="status-dot"></span><span class="name">Auto-restart</span><span class="ping">4:00 AM</span></div>
+              <div class="server-status-row"><span class="status-dot"></span><span class="name">Last backup</span><span class="ping">2h ago</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FEATURES STRIP ================= -->
+<section class="section">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow"><span class="dot"></span> Built for Minecraft</span>
+      <h2 class="section-title">Made for the way you actually play</h2>
+    </div>
+    <div class="features-grid">
+      <div class="glass-card feature-card reveal">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></div>
+        <h4>1-click modpacks</h4>
+        <p>Install from CurseForge or Modrinth directly through the panel — no file uploads required.</p>
+      </div>
+      <div class="glass-card feature-card reveal">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M13 2L4 14h7l-1 8 9-12h-7l1-8z"/></svg></div>
+        <h4>Instant plugin installs</h4>
+        <p>Search and install Bukkit/Spigot/Paper plugins without touching a config file.</p>
+      </div>
+      <div class="glass-card feature-card reveal">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><path d="M21 8v13H3V8M1 3h22v5H1z"/></svg></div>
+        <h4>One-click world restore</h4>
+        <p>Roll back to any of your daily backups in seconds if a build goes wrong or a plugin conflicts.</p>
+      </div>
+      <div class="glass-card feature-card reveal">
+        <div class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/></svg></div>
+        <h4>Free subdomain</h4>
+        <p>Get a memorable play.vitalcloud.fun address at no extra cost, or point your own domain.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="wrap">
+    <div class="glass cta-box reveal-scale">
+      <h2>Your world, running in under 60 seconds</h2>
+      <p>Pick a plan above and start building the moment checkout completes.</p>
+      <div class="cta-actions">
+        <a href="#pricing" class="btn btn-primary btn-lg">Deploy now →</a>
+        <a href="vps.html" class="btn btn-ghost btn-lg">Need a VPS instead?</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-mount"></div>
+
+<script src="assets/partials.js"></script>
+<script src="assets/script.js"></script>
+</body>
+</html>
